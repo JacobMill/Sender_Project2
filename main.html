@@ -5,40 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sender — Browse Jobs</title>
 
-  <!-- (Optional) Bootstrap CSS -->
+  <!-- Optional Bootstrap (keep if you want utilities) -->
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     crossorigin="anonymous"
   />
 
-  <!-- Your CSS -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Navbar shared style -->
+  <!-- Navbar -->
   <header class="navbar">
     <h1 class="logo">Sender</h1>
     <nav>
       <a href="index.html">Home</a>
-      <a href="applications.html" aria-current="page">Applications</a>
-      <a href="profile.html">Profile</a>
+      <a href="#" aria-current="page">Applications</a>
+      <a href="#">Profile</a>
     </nav>
   </header>
+
+  <!-- NEW: Filters / Location strip right under the navbar -->
+  <div class="filters-bar">
+    <div class="filters-left">
+      <span class="chip">Location: Lubbock, TX</span>
+      <span class="chip">Range: 20 mi</span>
+      <span class="chip">Pay: 70–110k</span>
+    </div>
+    <div class="filters-right">
+      <a class="btn btn-gradient" href="#">Edit</a>
+    </div>
+  </div>
 
   <!-- Fullscreen map background -->
   <section class="map-section" aria-label="Map background">
     <img src="assets/map-placeholder.jpg" alt="Map background" />
-    <!-- Overlay content -->
+
+    <!-- Overlay cards (now sized to fill the page height) -->
     <div class="overlay">
       <!-- Left: main job -->
-      <article class="card glass" aria-labelledby="job-title">
+      <article class="card glass main-card" aria-labelledby="job-title">
         <h2 id="job-title" class="card-title">Website Designer</h2>
         <p class="card-row"><strong>Location:</strong> Lubbock, TX</p>
         <p class="card-row"><strong>Work Type:</strong> Part-time</p>
         <p class="card-row"><strong>Pay:</strong> $95k–100k / year</p>
         <p class="card-row"><strong>Description:</strong> Design and maintain user interfaces for client platforms.</p>
-        <button class="btn">Apply Now</button>
+
+        <div class="card-actions">
+          <a class="btn btn-gradient" href="#">Apply Now</a>
+          <a class="btn btn-ghost" href="#">Save</a>
+        </div>
       </article>
 
       <!-- Right: other openings -->
@@ -76,7 +92,7 @@
     <p>© 2025 Sender Project — All rights reserved.</p>
   </footer>
 
-  <!-- (Optional) Bootstrap JS -->
+  <!-- Optional Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </body>
