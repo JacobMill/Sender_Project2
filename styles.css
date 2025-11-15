@@ -1,8 +1,13 @@
 .scroll-page {
+  background-image: url('./img/map-placeholder.jpg');
+  background-size: cover;
+  background-position: center;
   width: 100%;
   min-width: 33366px;
   height: 21370px;
   position: relative;
+  transform: scale(0.05);
+  transform-origin: top left;
 }
 
 .scroll-page .image {
@@ -1642,12 +1647,14 @@
 
 
 .sender-main-page {
-  background-color: #ffffff;
+  background: linear-gradient(to bottom, #ff7f50, #ff69b4);
   overflow: hidden;
   width: 100%;
   min-width: 30543px;
   min-height: 21169px;
   position: relative;
+  transform: scale(0.05);
+  transform-origin: top left;
 }
 
 .sender-main-page .group {
@@ -1830,11 +1837,13 @@
 }
 
 .applications {
-  background-color: #ffffff;
+  background: linear-gradient(to bottom, #ff7f50, #ff69b4);
   width: 100%;
   min-width: 30543px;
   min-height: 20873px;
   position: relative;
+  transform: scale(0.05);
+  transform-origin: top left;
 }
 
 .applications .asdadsd {
@@ -2003,6 +2012,7 @@
     rgba(255, 119, 119, 1) 100%
   );
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   z-index: 1;
@@ -2053,6 +2063,7 @@
     rgba(255, 119, 119, 1) 100%
   );
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   z-index: 1;
@@ -2103,6 +2114,7 @@
     rgba(255, 119, 119, 1) 100%
   );
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   z-index: 1;
@@ -2153,6 +2165,7 @@
     rgba(255, 119, 119, 1) 100%
   );
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   z-index: 1;
@@ -2203,6 +2216,7 @@
     rgba(255, 119, 119, 1) 100%
   );
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   z-index: 1;
@@ -2532,11 +2546,24 @@
 }
 
 .profile {
-  background-color: #ffffff;
+  background: linear-gradient(to bottom, #ff7f50, #ff69b4);
   width: 100%;
   min-width: 30543px;
   min-height: 20873px;
   position: relative;
+  transform: scale(0.05);
+  transform-origin: top left;
+}
+
+.profile::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 0;
 }
 
 .profile .asdadsd {
